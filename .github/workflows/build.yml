@@ -488,16 +488,16 @@ jobs:
             #Nightly #MoonWake
 
             ⚙️ **Build Infomation:**
-            - **Config file:** ${{ github.event.inputs.config_file }}
-            - **Build type:** ${{ github.event.inputs.config_type }}
+            - **Config file:** [${{ github.event.inputs.config_file }}](${{ github.server_url }}/${{ github.repository }}/tree/${{ github.ref_name }}/configs/${{ github.event.inputs.config_file }})
+            - **Build type:** `${{ github.event.inputs.config_type }}`
 
             📊 **Workflow Infomations:**
-            - **Status:** ${{ github.action_status }}
-            - **Attempt:** ${{ github.run_attempt }}
-            - **Run Number:** #${{ github.run_number }}
-            - **Run ID:** ${{ github.run_id }}
-            - **Actor:** ${{ github.actor }}
-            - **Workflow SHA:** ${{ github.sha }}
+            - **Status:** `${{ github.action_status }}`
+            - **Attempt:** `${{ github.run_attempt }}`
+            - **Run Number:** `#${{ github.run_number }}`
+            - **Run ID:** `${{ github.run_id }}`
+            - **Actor:** `${{ github.actor }}`
+            - **Workflow SHA:** `${{ github.sha }}`
             - **Workflow Link:** [click here](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
 
             📄 **Notes:**

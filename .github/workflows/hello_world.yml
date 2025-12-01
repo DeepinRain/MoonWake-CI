@@ -22,13 +22,12 @@ jobs:
             **MoonWake at 27:00**
 
             📊 **Workflow Infomations:**
-            - **Status:** ${{ github.action_status }}
-            - **Attempt:** ${{ github.run_attempt }}
-            - **Run Number:** #${{ github.run_number }}
-            - **Run ID:** ${{ github.run_id }}
-            - **Actor:** ${{ github.actor }}
-            - **Original Actor:** ${{ github.github.triggering_actor }}
-            - **Workflow SHA:** ${{ github.sha }}
+            - **Status:** `${{ github.action_status }}`
+            - **Attempt:** `${{ github.run_attempt }}`
+            - **Run Number:** `#${{ github.run_number }}`
+            - **Run ID:** `${{ github.run_id }}`
+            - **Actor:** `${{ github.actor }}`
+            - **Workflow SHA:** `${{ github.sha }}`
             - **Workflow Link:** [click here](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
 
             📄 **Notes:**
