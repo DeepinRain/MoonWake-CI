@@ -442,7 +442,7 @@ jobs:
         uses: actions/upload-artifact@v4
         if: ${{ env.useAnykernel == 'true' }}
         with:
-          name: "${{ env.KERNEL_NAME }}-${{ env.KERNEL_VERSION_LATEST }}-${{ github.run_number }}-${{ env.KERNEL_VERSION_HASH }}-${{ env.builddate }}-${{ github.event.inputs.config_type }}"
+          name: "${{ env.KERNEL_NAME }}-${{ env.KERNEL_VERSION_LATEST }}-${{ github.run_number }}-${{ env.KERNEL_VERSION_HASH }}-${{ github.event.inputs.config_type }}"
           path: ./AnyKernel3
 
   publish:
@@ -478,7 +478,9 @@ jobs:
             )
           done
           echo "GITHUB_SHA_SHORT=$(echo $GITHUB_SHA | cut -c 1-6)" >> $GITHUB_ENV
-          echo "KERNEL_BUILD_LIST=$(printf '%s ' "./packed_kernels/"* | sed 's/ $//')" >> $GITHUB_ENV
+          echo "KERNEL_BUILD_LIST<<EOF" >> $GITHUB_ENV
+          printf "%s\n" ./packed_kernels/* >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
 
       - name: Telegram File Uploader
         uses: xz-dev/TelegramFileUploader@v1.1.1
