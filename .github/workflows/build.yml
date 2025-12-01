@@ -475,7 +475,7 @@ jobs:
             )
           done
           echo "GITHUB_SHA_SHORT=$(echo $GITHUB_SHA | cut -c 1-6)" >> $GITHUB_ENV
-          echo "KERNEL_BUILD_LIST=$(printf '%s ' ./packed_kernels/*)" >> $GITHUB_ENV
+          echo "KERNEL_BUILD_LIST=$(printf '%s ' /home/runner/work/packed_kernels/*)" >> $GITHUB_ENV
 
       # - name: List current dir
       #   run: tree -a .
