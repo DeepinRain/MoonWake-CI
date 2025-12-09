@@ -3,74 +3,7 @@
     "kernelSource": {
       "device": "ruby",
       "vendor": "xiaomi",
-      "name": "MoonWake-Vanilla",
-      "defconfig": "ruby_defconfig",
-      "extraConfig": "vendor/bbr.config vendor/noop.config vendor/lru.config",
-      "repo": "https://github.com/RainyXeon/moonwake_kernel_xiaomi_ruby",
-      "branch": "moon"
-    },
-    "output_image": "Image.gz-dtb",
-    "telegram_message": "",
-    "additional_script_link": "disabled",
-    "additional_post_script_link": "disabled",
-    "kp": {
-      "use": false,
-      "kpimg_link": ""
-    },
-    "kernelsu": {
-      "enable": false,
-      "setupLink": "",
-      "setupArg": "",
-      "setupName": "",
-      "needPatch": false,
-      "susfsLink": ""
-    },
-    "toolchains": [
-      {
-        "repo": "https://gitlab.com/DR-KernelArchive/clang/r530567.git",
-        "branch": "14.0",
-        "name": "clang-AOSP",
-        "binPath": ["/bin"]
-      }
-    ],
-    "ccache": false,
-    "params": {
-      "ARCH": "arm64",
-      "CC": "clang-AOSP/bin/clang",
-      "KCFLAGS": "-O3 -march=armv8.2-a+crypto+fp16+dotprod -mcpu=cortex-a78 -mtune=cortex-a78",
-      "build_out": "Image.gz-dtb",
-      "externalCommand": {
-        "KBUILD_BUILD_HOST": "perfc.org",
-        "KBUILD_BUILD_USER": "rainyxeon",
-        "CROSS_COMPILE": "clang-AOSP/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "clang-AOSP/bin/arm-linux-gnueabi-",
-        "LD": "clang-AOSP/bin/ld.lld",
-        "LLVM": "1",
-        "LLVM_IAS": "1",
-        "AR": "clang-AOSP/bin/llvm-ar",
-        "NM": "clang-AOSP/bin/llvm-nm",
-        "OBJCOPY": "clang-AOSP/bin/llvm-objcopy",
-        "OBJDUMP": "clang-AOSP/bin/llvm-objdump",
-        "READELF": "clang-AOSP/bin/llvm-readelf",
-        "OBJSIZE": "clang-AOSP/bin/llvm-size",
-        "STRIP": "clang-AOSP/bin/llvm-strip",
-        "LDGOLD": "clang-AOSP/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "clang-AOSP/bin/llvm-ar",
-        "LLVM_DIS": "clang-AOSP/bin/llvm-dis"
-      }
-    },
-    "AnyKernel3": {
-      "use": true,
-      "release": true,
-      "repo": "https://github.com/DR-KernelArchive/AnyKernel3",
-      "branch": "ruby"
-    }
-  },
-  {
-    "kernelSource": {
-      "device": "ruby",
-      "vendor": "xiaomi",
-      "name": "MoonWake-KSUN",
+      "name": "For-Aeron-Fan-Only-KSUN",
       "defconfig": "ruby_defconfig",
       "extraConfig": "vendor/bbr.config vendor/noop.config vendor/lru.config vendor/kernelsu.config vendor/susfs.config",
       "repo": "https://github.com/RainyXeon/moonwake_kernel_xiaomi_ruby",
@@ -78,7 +11,7 @@
     },
     "output_image": "Image.gz-dtb",
     "telegram_message": "",
-    "additional_script_link": "disabled",
+    "additional_script_link": "https://github.com/DeepinRain/MoonWake-CI/raw/main/scripts/aeron-merch.sh",
     "additional_post_script_link": "disabled",
     "kp": {
       "use": false,
@@ -107,8 +40,8 @@
       "KCFLAGS": "-O3 -march=armv8.2-a+crypto+fp16+dotprod -mcpu=cortex-a78 -mtune=cortex-a78",
       "build_out": "Image.gz-dtb",
       "externalCommand": {
-        "KBUILD_BUILD_HOST": "perfc.org",
-        "KBUILD_BUILD_USER": "rainyxeon",
+        "KBUILD_BUILD_HOST": "gmail.com",
+        "KBUILD_BUILD_USER": "aeronrules2",
         "CROSS_COMPILE": "clang-AOSP/bin/aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "clang-AOSP/bin/arm-linux-gnueabi-",
         "LD": "clang-AOSP/bin/ld.lld",
@@ -130,14 +63,14 @@
       "use": true,
       "release": true,
       "repo": "https://github.com/DR-KernelArchive/AnyKernel3",
-      "branch": "ruby"
+      "branch": "shaun"
     }
   },
   {
     "kernelSource": {
       "device": "ruby",
       "vendor": "xiaomi",
-      "name": "Moonwake-SukiSU",
+      "name": "For-Aeron-Fan-Only-SukiSU",
       "defconfig": "ruby_defconfig",
       "extraConfig": "vendor/bbr.config vendor/noop.config vendor/lru.config vendor/kernelsu.config vendor/susfs.config",
       "repo": "https://github.com/RainyXeon/moonwake_kernel_xiaomi_ruby",
@@ -145,7 +78,7 @@
     },
     "output_image": "Image.gz-dtb",
     "telegram_message": "",
-    "additional_script_link": "disabled",
+    "additional_script_link": "https://github.com/DeepinRain/MoonWake-CI/raw/main/scripts/aeron-merch.sh",
     "additional_post_script_link": "disabled",
     "kp": {
       "use": false,
@@ -174,8 +107,8 @@
       "KCFLAGS": "-O3 -march=armv8.2-a+crypto+fp16+dotprod -mcpu=cortex-a78 -mtune=cortex-a78",
       "build_out": "Image.gz-dtb",
       "externalCommand": {
-        "KBUILD_BUILD_HOST": "perfc.org",
-        "KBUILD_BUILD_USER": "rainyxeon",
+        "KBUILD_BUILD_HOST": "gmail.com",
+        "KBUILD_BUILD_USER": "aeronrules2",
         "CROSS_COMPILE": "clang-AOSP/bin/aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "clang-AOSP/bin/arm-linux-gnueabi-",
         "LD": "clang-AOSP/bin/ld.lld",
@@ -197,7 +130,7 @@
       "use": true,
       "release": true,
       "repo": "https://github.com/DR-KernelArchive/AnyKernel3",
-      "branch": "ruby"
+      "branch": "shaun"
     }
   }
 ]

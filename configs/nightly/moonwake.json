@@ -152,7 +152,7 @@
     "kernelsu": {
       "enable": true,
       "setupLink": "https://raw.githubusercontent.com/DR-KernelArchive/SukiSU-Ultra/main/kernel/setup.sh",
-      "setupArg": "sukisu-3.2.0-susfs-main",
+      "setupArg": "susfs-1.5.12",
       "setupName": "KernelSU",
       "needPatch": false,
       "susfsLink": ""
