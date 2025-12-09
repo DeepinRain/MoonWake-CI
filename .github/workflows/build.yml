@@ -27,6 +27,14 @@ on:
         options:
           - "true"
           - "false"
+      send_to_telegram:
+        description: "Whatever send to telegram ci channel or not"
+        required: true
+        type: choice
+        default: "true"
+        options:
+          - "true"
+          - "false"
 
 permissions:
   contents: write
@@ -484,6 +492,7 @@ jobs:
 
       - name: Telegram File Uploader
         uses: xz-dev/TelegramFileUploader@v1.1.1
+        if: ${{ always() && github.event.inputs.send_to_telegram == 'true' }}
         with:
           to-who: '${{ secrets.TELEGRAM_API_TO_WHO }}'
           message: |
