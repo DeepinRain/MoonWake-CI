@@ -73,7 +73,7 @@
       "defconfig": "ruby_defconfig",
       "extraConfig": "vendor/debug.config vendor/bbr.config vendor/noop.config vendor/lru.config vendor/kernelsu.config vendor/susfs.config",
       "repo": "https://github.com/RainyXeon/moonwake_kernel_xiaomi_ruby",
-      "branch": "temp-exp"
+      "branch": "experimental-ksu-1.0"
     },
     "output_image": "Image.gz-dtb",
     "additional_script_link": "https://github.com/DeepinRain/MoonWake-CI/raw/main/scripts/exp-version.sh",
@@ -138,7 +138,7 @@
       "defconfig": "ruby_defconfig",
       "extraConfig": "vendor/debug.config vendor/bbr.config vendor/noop.config vendor/lru.config vendor/kernelsu.config vendor/susfs.config vendor/kernelpatch.config",
       "repo": "https://github.com/RainyXeon/moonwake_kernel_xiaomi_ruby",
-      "branch": "temp-exp"
+      "branch": "experimental-ksu-1.0"
     },
     "output_image": "Image.gz-dtb",
     "additional_script_link": "https://github.com/DeepinRain/MoonWake-CI/raw/main/scripts/exp-version.sh",
